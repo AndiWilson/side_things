@@ -25,8 +25,8 @@ def test_incorrect_matching(self):
         self.assertFalse(check_brackets("))"))
         self.assertFalse(check_brackets(")"))
         self.assertFalse(check_brackets("()}"))
-        self.assertFalse(check_brackets("[]"))
-        self.assertFalse(check_brackets("[][]"))
+        self.assertFalse(check_brackets("["))
+        self.assertFalse(check_brackets("[]]"))
         self.assertFalse(check_brackets("{[}]"))
 
 if __name__ == '__main__':
